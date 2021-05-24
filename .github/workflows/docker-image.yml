@@ -13,5 +13,5 @@ jobs:
           username: paulobritoplht
           password: qwe!123!!
           repository: paulobritoplht/teste
-          tag_with_ref: true
+          tag_with_ref: false
           tag: asdf
