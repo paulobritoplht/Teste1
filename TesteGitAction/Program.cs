@@ -23,4 +23,5 @@ namespace TesteGitAction
                     webBuilder.UseStartup<Startup>();
                 });
     }
+    //Teste
 }
