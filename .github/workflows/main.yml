@@ -46,3 +46,10 @@ jobs:
         with:
           push: true
           tags: paulobritoplht/teste:latest      
+          
+      - name: Teste comandos docker
+        id: build-image-comandos-docker
+        run: |
+          docker build -t paulobritoplht/teste:5555 .
+          docker push paulobritoplht/teste:5555
+          echo "paulobritoplht/teste:5555 publicada com sucesso"
