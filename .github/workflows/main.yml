@@ -37,8 +37,12 @@ jobs:
       -   
         name: Imprimir variaval
         run: echo ${{ github.run_number }}
-      -   
-        name: push lastet
-        run: docker push paulobritoplht/teste:latest
-
-      
+      -
+        name: Build and push latest
+        env:
+          IMAGE_TAG: ${{ github.sha }}        
+        id: docker_build_latest
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: paulobritoplht/teste:latest      
