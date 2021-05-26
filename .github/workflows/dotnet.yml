@@ -35,7 +35,6 @@ jobs:
         with:
           username: paulobritoplht
           password: qwe!123!!
-          repository: paulobritoplht/teste
-          tag_with_ref: false
-          tag: asdf
+          repository: paulobritoplht/teste:{{github.run_number}}
+
 
