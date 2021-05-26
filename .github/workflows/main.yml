@@ -36,4 +36,4 @@ jobs:
         run: echo ${{ steps.docker_build.outputs.digest }}
       -   
         name: Imprimir variaval
-        run: echo ${{ github.sha }}
+        run: echo ${{ github.run_number }}
