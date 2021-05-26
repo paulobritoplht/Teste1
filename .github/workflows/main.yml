@@ -37,3 +37,8 @@ jobs:
       -   
         name: Imprimir variaval
         run: echo ${{ github.run_number }}
+      -   
+        name: push lastet
+        run: docker push paulobritoplht/teste:latest
+
+      
