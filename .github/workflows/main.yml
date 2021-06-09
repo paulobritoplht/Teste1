@@ -50,6 +50,6 @@ jobs:
       - name: Teste comandos docker
         id: build-image-comandos-docker
         run: | 
-          docker build . --tag paulobritoplht/teste:5555
+          docker build -t paulobritoplht/teste:5555  -f Dockerfile .
           docker push paulobritoplht/teste:5555
           echo "paulobritoplht/teste:5555 publicada com sucesso"
