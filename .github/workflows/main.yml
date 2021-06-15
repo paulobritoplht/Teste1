@@ -9,7 +9,7 @@ on:
 jobs:
   docker:
     env:      
-      CAMINHO_PROJETO_WEBAPP: ./TesteGitAction      
+      CAMINHO_PROJETO_WEBAPP: ./TesteGitAction/TesteGitAction.csproj      
       
     runs-on: ubuntu-latest
     steps:
