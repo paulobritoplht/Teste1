@@ -51,3 +51,5 @@ jobs:
         id: build-image-comandos-docker
         run: | 
           ls
+          cd .
+          ls
