@@ -50,4 +50,4 @@ jobs:
       - name: Teste comandos docker
         id: build-image-comandos-docker
         run: | 
-          dotnet restore
+          echo "$PATH"
