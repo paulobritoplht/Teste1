@@ -49,7 +49,4 @@ jobs:
           
       - name: Teste comandos docker
         id: build-image-comandos-docker
-        run: | 
-          ls
-          cd .
-          ls
+        run: dotnet build --configuration Release
