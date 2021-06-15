@@ -48,4 +48,4 @@ jobs:
           tags: paulobritoplht/teste:latest      
           
       - name: Build com o utilitario dotnet
-        run: dotnet build ./Teste1 --configuration Release
+        run: dotnet build ./Teste1/TesteGitAction --configuration Release
