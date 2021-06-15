@@ -28,6 +28,9 @@ jobs:
 
     - name: Publish com o utilitario dotnet
       run: dotnet publish ${{ env.CAMINHO_PROJETO_WEBAPP }} -c Release -o app
+      
+    - name: teste docker  
+      run: docker build -t counter-image -f Dockerfile .
 
     - name: Login no Azure
       uses: Azure/login@v1
