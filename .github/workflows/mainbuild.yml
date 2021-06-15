@@ -2,9 +2,9 @@ name: ASP.NET Core 3.1 + Tests + Azure App Service
 
 on:
   push:
-    branches: [ mail ]
+    branches: [ main ]
   pull_request:
-    branches: [ mail ]
+    branches: [ main ]
 
 jobs:
   build:
