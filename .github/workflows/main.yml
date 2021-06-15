@@ -8,6 +8,9 @@ on:
 
 jobs:
   docker:
+    env:      
+      CAMINHO_PROJETO_WEBAPP: ./Teste1      
+      
     runs-on: ubuntu-latest
     steps:
       -
@@ -48,14 +51,5 @@ jobs:
           tags: paulobritoplht/teste:latest      
           
       - name: Build1
-        run: dotnet build ./Teste1/TesteGitAction --configuration Release
-        
-      - name: Build2
-        run: dotnet build ./Teste1 --configuration Release
-        
-      - name: Build3
-        run: dotnet build ./ --configuration Release
-        
-      - name: Build4
-        run: dotnet build ../ --configuration Release
+        run: dotnet build ${{ env.CAMINHO_PROJETO_WEBAPP }} --configuration Release              
         
