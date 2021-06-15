@@ -47,8 +47,5 @@ jobs:
           push: true
           tags: paulobritoplht/teste:latest      
           
-      - name: Teste comandos docker
-        id: build-image-comandos-docker
-        run: |
-          cd ..
-          ls
+      - name: Build com o utilitario dotnet
+        run: dotnet build ./Teste1 --configuration Release
